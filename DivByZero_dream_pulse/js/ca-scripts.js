@@ -17,10 +17,13 @@ function addCustomerName() {
 // Change all class names 'tm-white-rect' to 'tm-blue=rect'
 function toggleColors() {
 
-
+    let el1 = document.querySelectorAll('.tm-white-rect')
     let el2 = document.querySelectorAll('.tm-color-primary')
 
-
+    for (i = 0; i < el1.length; i++){
+        el1[i].classList.add('tm-white-rect');
+        el1[i].classList.add('tm-blue-rect');
+    }
 
     for (i = 0; i < el2.length; ++i) {
         el2[i].classList.add('tm-color-green');
