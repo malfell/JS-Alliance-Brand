@@ -20,6 +20,7 @@ function toggleColors() {
     let el1 = document.querySelectorAll('.tm-white-rect')
     let el2 = document.querySelectorAll('.tm-color-primary')
 
+    //changed rect color
     for (i = 0; i < el1.length; i++){
         el1[i].classList.add('tm-white-rect');
         el1[i].classList.add('tm-blue-rect');
@@ -34,6 +35,9 @@ function toggleColors() {
 //<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
 function hideElement() {
 
+    //hid social links
+    let social = document.getElementById('social-links');
+    social.style.visibility = 'none';
 
 };
 
